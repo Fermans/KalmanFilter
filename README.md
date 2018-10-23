@@ -63,3 +63,5 @@ P=(I-K * H) * P_ * (I- K * H).transpose + K * R * K.transpose
 
 为了扩展性，我们从传感器检测器获得相同的状态，并使用相同的H。事实上，标准卡尔曼滤波器在我们的系统中并不是一个耗时的子模块。如果你可以很好地理解传感器的状态，你可以尝试使用简化的状态。
 
+
+Apollo中使用卡曼滤波的有perception/obstacle/camera/filter和perception/obstacle/lidar/tracker/hm_tracker
